@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# insert data in a SQLlite db
 
 import sqlite3
 import os.path
