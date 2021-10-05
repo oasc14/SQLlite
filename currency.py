@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import sqlite3
+import os.path
 
-DB_PATH = 'prueba.db'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "prueba.db")
 
 class CurrencyManager(object):
     def __init__(self, database=None):
